@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.gjing.projects;
+
+service HelloWorld {
+  rpc Hello(ReqMsg) returns (RespMsg);
+}
+
+message ReqMsg {
+  string name = 1;
+}
+
+message RespMsg {
+  string msg = 1;
+}
